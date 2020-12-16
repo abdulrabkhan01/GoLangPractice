@@ -11,6 +11,8 @@ func main() {
    result = sum(n1, n2, n3);
 
    fmt.Printf( "Sum  : %d\n", result )
+   x, y := multireturn()
+   fmt.Println(x,y)
 }
 
 
@@ -19,4 +21,8 @@ func sum(n1, n2, n3 int) int {
 
    sum = n1 + n2 + n3
    return sum 
+}
+
+func multireturn() (int, int) {
+	return 1, 2
 }
